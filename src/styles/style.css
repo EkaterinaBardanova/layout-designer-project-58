@@ -1,19 +1,28 @@
+/* stylelint-disable order/properties-order */
 /** CSS STYLE **/
 @font-face {
     font-family: "Open Sans";
     src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
   }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+  }
+
  
   @font-face {
     font-family: "Neucha";
     src: url("../fonts/Neucha/Neucha-Regular.ttf");
   }
+  
 
   p {
     font-size: 16px;
     font-family: "Open Sans";
-    line-height: 1.6 em;
     color: #2A2626;
+    line-height: 26px;
   }
 
   h1,
@@ -23,6 +32,10 @@
   }
 
   h1 {
+    position: absolute;
+    left: 165px;
+    top: 100px;
+    font-family: "Neucha";
     font-size: 72px;
   }
 
@@ -48,23 +61,75 @@
     --blue: #1085c5;
 }
 
+/**1**/
+
 .header {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   height: 914px;
   width: 1440px;
+  overflow: hidden;
 }
-
-
 
 .header::before {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
   background-image: url(../images/background.png);
-  opacity: 90%;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 10%;
   content: "";
 }
+
+.orange-heading {
+  color: var(--main);
+}
+
+.black-heading {
+  top: 285px;
+  color: var(--dark)
+}
+
+img {
+  position: relative;
+  height: 525px;
+  top: 55px;
+  left: 461px;
+}
+
+.columns-2 {
+  column-count: 2;
+  margin-left: 165px;
+  margin-top: 26px;
+}
+
+.header-column1 {
+  position: relative;
+  margin-top: 0;
+  width: 540px;
+}
+
+.header-column2 {
+  position: relative;
+  width: 540px;
+}
+
+.link-further {
+  position: absolute;
+  background-color: var(--main);
+  color: var(--light);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  left: 723px;
+  top: 765px;
+}
+
+/**2**/
+
+
