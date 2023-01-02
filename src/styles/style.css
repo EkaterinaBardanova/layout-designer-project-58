@@ -48,9 +48,23 @@
     --blue: #1085c5;
 }
 
-.section {
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 914px;
+  width: 1440px;
+}
+
+
+
+.header::before {
+  height: 100%;
   width: 100%;
-  max-width: 1100px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  position: absolute;
+  background-image: url(../images/background.png);
+  opacity: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
 }
