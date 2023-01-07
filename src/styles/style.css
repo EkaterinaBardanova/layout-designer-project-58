@@ -298,43 +298,44 @@
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.text_ikea-effect {
+.section_main_text { /**для всех блоков**/
   display: flex;
   position: absolute;
   flex-direction: column;
   height: 434px;
   width: 502px;
+}
+
+.main_text_position_right {  /**для всех блоков, где текст справа**/
   margin-top: 100px;
   margin-right: 165px;
   margin-bottom: 100px;
   margin-left: 773px;
 }
 
-.section_third_subtitle {
+.section_main_subtitle { /**для всех блоков**/
   font-family: "Neucha";
   font-size: 24px;
   color: var(--translucent_dark);
   margin: 0px;
 }
 
-.section_third_heading {
+.section_main_heading { /**для всех блоков**/
   margin: 0px;
   font-family: "Neucha";
   color: var(--dark);
 }
 
-.section_third_text {
+.section_main_paragraph { /**для всех блоков**/
   font-family: "Neucha";
   font-size: 34px;
   margin-top: 30px;
   line-height: 41px;
 }
 
-.heading_how_work {
+.heading_how_work { /**для всех блоков**/
   box-sizing: border-box;
   position: absolute;
-  margin-top: 634px;
-  margin-left: 165px;
   padding-left: 10px;
   width: 1110px;
   height: 26px;
@@ -346,10 +347,18 @@
 
 }
 
-.text_how_work {
+.heading_how_work_position_ikea{
+  margin-top: 634px;
+  margin-left: 165px;
+}
+
+.text_how_work { /**для всех блоков**/
   width: 1110px;
   display: flex;
   position: absolute;
+}
+
+.text_how_work_position_ikea {
   margin-top: 680px;
   margin-left: 165px;
   margin-right: 165px;
@@ -365,3 +374,67 @@
   width: 540px;
   height: 125px;
 }
+
+/**SECTION_4**/
+
+.section_fourth {
+  position: relative;
+  display: flex;
+  height: 855px;
+  width: 1440px;
+  background-color: var(--brown);
+}
+
+.section_fourth::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+  content: "";
+}
+
+.main_text_position_left { /**для всех блоков, где текст слева**/
+  margin-top: 100px;
+  margin-right: 30px;
+  margin-left: 165px;
+}
+
+.color_light { /**для всех светлых блоков**/
+  color: var(--translucent_white);
+}
+
+.color_white { /**для всех светлых блоков**/
+  color: var(--white);
+}
+
+.section_fourth_img {
+  display: flex;
+  position: absolute;
+  height: 434px;
+  width: 578px;
+  margin-top: 100px;
+  margin-right: 165px;
+  margin-bottom: 321px;
+  margin-left: 697px;
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.heading_how_work_position_optimization {
+  margin-top: 634px;
+  margin-right: 165px;
+  margin-left: 165px;
+
+  color: var(--brown);
+
+  background-color: var(--white);
+}
+
+.text_how_work_position_optimization {
+  margin-top: 680px;
+  margin-left: 165px;
+}
+
+/**SECTION_5 Искажение новизны**/
