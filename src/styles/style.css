@@ -16,12 +16,18 @@
     font-family: "Neucha";
     src: url("../fonts/Neucha/Neucha-Regular.ttf");
   }
+
+  body {
+    overflow-x: hidden;
+    margin: 0px;
+    
+    }
   
 
   p {
     font-size: 16px;
     font-family: "Open Sans";
-    color: #2A2626;
+    
     line-height: 26px;
   }
 
@@ -29,18 +35,20 @@
   h2,
   h3 {
     line-height: 1.2em;
+    font-family: "Neucha";
   }
 
   h1 {
     position: absolute;
-    left: 165px;
-    top: 100px;
     font-family: "Neucha";
     font-size: 72px;
   }
 
   h2 {
     font-size: 60px;
+    color: var(--main);
+
+    font-family: "Neucha";
   }
 
   h3 {
@@ -61,15 +69,37 @@
     --blue: #1085c5;
 }
 
+/**COMMON STYLES**/
+
+.container1 {
+  display: flex;
+  width: 1100px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+  width: 1100px;
+}
+
+.container {
+  position: relative;
+
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+
+
 /**HEADER**/
 
 .header {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  height: 914px;
-  width: 1440px;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -96,14 +126,11 @@
 .header_img {
   position: relative;
   height: 525px;
-  top: 55px;
-  left: 461px;
+  right: -270px;
 }
 
 .columns-2 {
-  column-count: 2;
-  margin-left: 165px;
-  margin-top: 26px;
+  display: flex;
 }
 
 .header-column1 {
@@ -112,13 +139,17 @@
   width: 540px;
 }
 
+.header-column1:first-child {
+  margin-right: 30px;
+}
+
 .header-column2 {
   position: relative;
   width: 540px;
 }
 
 .link-further {
-  position: absolute;
+  display: block;
   background-color: var(--main);
   color: var(--light);
   padding: 12px 24px;
@@ -126,8 +157,10 @@
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 16px;
-  left: 723px;
-  top: 765px;
+  margin-top: 40px;
+  margin-right: 392px;
+  margin-left: 570px;
+  
 }
 
 /**SECTION_1**/
@@ -135,8 +168,7 @@
 .section_first {
   position: relative;
   display: flex;
-  height: 914px;
-  width: 1440px;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(var(--white) 814px, var(--main_dark) 814px, var(--main_dark) 914px);
@@ -146,8 +178,8 @@
   font-family: "Neucha";
   color: var(--dark);
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .section_first_heading_orange {
@@ -157,12 +189,14 @@
 }
 
 .section_first_paragraph {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 11px;
   margin-bottom: 30px;
 }
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  margin-bottom: -116px;
 }
 
 /**SECTION_2**/
@@ -170,9 +204,23 @@
 .section_second {
   position: relative;
   display: flex;
-  height: 891px;
-  width: 1440px;
+  width: 100vw;
   background: var(--main_dark);
+}
+
+.container1_cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  height: 323px;
+  margin-bottom: 20px;
+}
+
+.container2_cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  height: 348px;
 }
 
 .section_second_heading {
@@ -182,10 +230,11 @@
   font-size: 52px;
   color: var(--main);
   line-height: 62.4px;
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  margin-left: 165px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  height: 323px;
+  width: 350px;
 }
 
 .section_second_heading_white {
@@ -194,56 +243,24 @@
 
 .card {
   box-sizing: border-box;
-  display: block;
-  position: absolute;
   background-color: var(--white);
   padding: 24px;
 
 }
 
 .card_1 {
+  display: flex;
+  flex-direction: column;
   height: 323px;
   width: 350px;
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-left: 545px;
+  
 }
 
 .card_2 {
-  height: 323px;
-  width: 350px;
-  margin-top: 100px;
-  margin-right: 165px;
-  margin-bottom: 20px;
-  margin-left: 925px;
-}
-
-.card_3 {
+  display: flex;
+  flex-direction: column;
   height: 348px;
   width: 350px;
-  margin-top: 459px;
-  margin-right: 30px;
-  margin-bottom: 100px;
-  margin-left: 165px;
-}
-
-.card_4 {
-  height: 348px;
-  width: 350px;
-  margin-top: 459px;
-  margin-right: 30px;
-  margin-bottom: 100px;
-  margin-left: 545px;
-}
-
-.card_5 {
-  height: 348px;
-  width: 350px;
-  margin-top: 459px;
-  margin-right: 165px;
-  margin-bottom: 100px;
-  margin-left: 925px;
 }
 
 .number {
@@ -255,6 +272,8 @@
   margin: 0;
 }
 
+
+
 .card_heading {
   font-family: "Neucha";
   margin-top: 0px;
@@ -262,20 +281,41 @@
   color: var(--main);
 }
 
+
+
 .card_4_paragraph {
   margin-top: 12px;
 }
 
-/**SECTION_3**/
 
-.section_third {
-  position: relative;
-  display: flex;
-  height: 905px;
-  width: 1440px;
+.card-link {
+  text-decoration: none;
+  color: var(--dark);
 }
 
-.section_third::before {
+.card:hover  {
+  background-color: var(--main);
+}
+
+.card:hover p {
+  color: var(--white);
+}
+
+.card:hover h3 {
+  color: var(--white);
+}
+  
+
+
+/**SECTION_3**/
+
+.section_light {
+  position: relative;
+  display: flex;
+  width: 100vw;
+}
+
+.section_light::before {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -286,21 +326,17 @@
   content: "";
 }
 
-.section_third_img {
+.section_light_img {
   display: flex;
-  position: absolute;
   height: 434px;
   width: 578px;
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-bottom: 100px;
-  margin-left: 165px;
+  padding-right: 30px;
+
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .section_main_text { /**для всех блоков**/
   display: flex;
-  position: absolute;
   flex-direction: column;
   height: 434px;
   width: 502px;
@@ -335,9 +371,9 @@
 
 .heading_how_work { /**для всех блоков**/
   box-sizing: border-box;
-  position: absolute;
+
   padding-left: 10px;
-  width: 1110px;
+  width: 1100px;
   height: 26px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -347,45 +383,40 @@
 
 }
 
-.heading_how_work_position_ikea{
-  margin-top: 634px;
-  margin-left: 165px;
-}
+
 
 .text_how_work { /**для всех блоков**/
-  width: 1110px;
+
+  width: 1100px;
   display: flex;
-  position: absolute;
+
 }
 
-.text_how_work_position_ikea {
-  margin-top: 680px;
-  margin-left: 165px;
-  margin-right: 165px;
-}
+
 
 .how_work_paragraph1 {
   width: 540px;
   height: 125px;
   margin-right: 30px;
+  margin-top: 4px;
 }
 
 .how_work_paragraph2 {
   width: 540px;
   height: 125px;
+  margin-top: 4px;
 }
 
 /**SECTION_4**/
 
-.section_fourth {
+.section_brown {
   position: relative;
   display: flex;
-  height: 855px;
-  width: 1440px;
+  width: 100vw;
   background-color: var(--brown);
 }
 
-.section_fourth::before {
+.section_brown::before {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -396,11 +427,7 @@
   content: "";
 }
 
-.main_text_position_left { /**для всех блоков, где текст слева**/
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-left: 165px;
-}
+
 
 .color_light { /**для всех светлых блоков**/
   color: var(--translucent_white);
@@ -410,31 +437,92 @@
   color: var(--white);
 }
 
-.section_fourth_img {
+.section_brown_img {
   display: flex;
-  position: absolute;
   height: 434px;
   width: 578px;
-  margin-top: 100px;
-  margin-right: 165px;
-  margin-bottom: 321px;
-  margin-left: 697px;
+  padding-left: 30px;
+  
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.heading_how_work_position_optimization {
-  margin-top: 634px;
-  margin-right: 165px;
-  margin-left: 165px;
+.background_white {
 
   color: var(--brown);
 
   background-color: var(--white);
 }
 
-.text_how_work_position_optimization {
-  margin-top: 680px;
-  margin-left: 165px;
+/**FOOTER**/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: var(--main_dark);
+  padding: 55px;
+
 }
 
-/**SECTION_5 Искажение новизны**/
+.h3-footer {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+
+}
+
+.email-heading {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: var(--white);
+}
+
+.text-accept-rules {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: var(--white);
+}
+
+input {
+  box-sizing: border-box;
+  height: 50px;
+  width: 415px;
+  padding: 15px;
+  border: 0px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border: 0;
+
+  background-color: var(--main);
+  
+}
+
+.btn::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/send.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+.form {
+  display: flex;
+  box-sizing: border-box;
+  width: 423px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 60px;
+}
