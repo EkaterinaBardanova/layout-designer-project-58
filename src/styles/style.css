@@ -105,7 +105,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../images/background.png);
+  background-color: #E5E5E5;
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
@@ -292,7 +293,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../images/background.png);
+  background-color: #E5E5E5;
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
@@ -378,7 +380,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../images/background.png);
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
@@ -467,7 +469,7 @@ input {
   justify-content: center;
   height: 20px;
   width: 20px;
-  background-image: url(../images/send.svg);
+  background-image: url(/images/send.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
