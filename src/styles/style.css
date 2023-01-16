@@ -28,7 +28,7 @@
     
     line-height: 26px;
 
-    color: var(--dark);
+    color: var(--white);
   }
 
   h1,
@@ -50,6 +50,7 @@
     font-size: 60px;
     color: var(--main);
     font-weight: normal;
+    margin: 0px;
 
     font-family: "Neucha";
   }
@@ -445,6 +446,10 @@
 
 .color-white { /**для всех светлых блоков**/
   color: var(--white);
+}
+
+.color-dark {
+  color: var(--dark);
 }
 
 .section-brown-img {
