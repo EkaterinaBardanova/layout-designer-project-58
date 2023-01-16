@@ -259,6 +259,7 @@
   flex-direction: column;
   font-family: "Neucha";
   font-size: 52px;
+  font-weight: normal;
   color: var(--main);
   line-height: 62.4px;
   margin-top: 0px;
@@ -274,7 +275,7 @@
 
 .card {
   box-sizing: border-box;
-  background-color: var(--white);
+  background-color: var(--light);
   padding: 24px;
 
 }
@@ -305,6 +306,7 @@
 
 .card-heading {
   font-family: "Neucha";
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--main);
