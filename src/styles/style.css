@@ -196,7 +196,7 @@
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(var(--white) 814px, var(--main_dark) 814px, var(--main_dark) 914px);
+  background: linear-gradient(var(--white) 788px, var(--main_dark) 788px, var(--main_dark) 888px);
 }
 
 .section-first-heading {
@@ -215,13 +215,15 @@
 
 .section-first-paragraph {
   text-align: center;
-  margin-top: 11px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   margin-bottom: -116px;
+
+  
 }
 
 /**SECTION_2**/
