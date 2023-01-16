@@ -13,7 +13,7 @@
 
   @font-face {
     font-family: "Neucha";
-    src: url("../fonts/Neucha/Neucha-Regular.otf");
+    src: url("../fonts/Neucha/Neucha-Regular.ttf")
   }
 
   body {
