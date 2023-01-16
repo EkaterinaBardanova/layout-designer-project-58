@@ -36,6 +36,7 @@
   h3 {
     line-height: 1.2em;
     font-family: "Neucha";
+    font-weight: normal;
   }
 
   h1 {
@@ -475,7 +476,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   background-color: var(--main_dark);
-  padding: 55px;
+  padding: 21px 55px;
 
 }
 
@@ -536,7 +537,6 @@ input {
 .form {
   display: flex;
   box-sizing: border-box;
-  width: 423px;
 }
 
 .footer-text {
