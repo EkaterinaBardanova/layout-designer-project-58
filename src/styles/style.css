@@ -49,6 +49,7 @@
   h2 {
     font-size: 60px;
     color: var(--main);
+    font-weight: normal;
 
     font-family: "Neucha";
   }
