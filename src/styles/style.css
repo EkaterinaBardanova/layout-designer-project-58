@@ -450,6 +450,7 @@ h3 {
   box-sizing: border-box;
   background-color: var(--main-dark);
   padding: 21px 55px;
+  color: var(--white);
 }
 
 .h3-footer {
