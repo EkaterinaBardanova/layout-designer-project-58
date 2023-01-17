@@ -23,7 +23,7 @@ body {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 26px;
   color: var(--white);
 }
@@ -49,7 +49,7 @@ h2 {
   font-size: 60px;
   color: var(--main);
   font-weight: normal;
-  margin: 0; 
+  margin: 0;
 }
 
 h3 {
@@ -281,7 +281,7 @@ h3 {
 
 .number {
   font-size: 64px;
-  font-family: Neucha,sans-serif;
+  font-family: Neucha, sans-serif;
   color: var(--main-dark);
   line-height: 1;
   padding-bottom: 40px;
