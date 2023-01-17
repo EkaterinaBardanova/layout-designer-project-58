@@ -1,5 +1,5 @@
-/* stylelint-disable order/properties-order */
 /** CSS STYLE **/
+
 @font-face {
     font-family: "Open Sans";
     src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
@@ -18,16 +18,13 @@
 
   body {
     overflow-x: hidden;
-    margin: 0px;
-    
+    margin: 0;
     }
-  
-  p {
-    font-size: 16px;
-    font-family: "Open Sans";
-    
-    line-height: 26px;
 
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; 
+    line-height: 26px;
     color: var(--white);
   }
 
@@ -35,13 +32,13 @@
   h2,
   h3 {
     line-height: 1.2em;
-    font-family: "Neucha";
+    font-family: Neucha, sans-serif;
     font-weight: normal;
   }
 
   h1 {
     position: absolute;
-    font-family: "Neucha";
+    font-family: Neucha, sans-serif;
     font-size: 72px;
     font-weight: normal;
     line-height: 1.2em;
@@ -51,30 +48,30 @@
     font-size: 60px;
     color: var(--main);
     font-weight: normal;
-    margin: 0px;
+    margin: 0;
 
-    font-family: "Neucha";
+    font-family: Neucha, sans-serif;
   }
 
   h3 {
     font-size: 34px;
   }
 
-  /** Colours **/
+/** Colours **/
 
 :root {
-    --white: #fff;
-    --translucent_white: #d7ccc0;
-    --light: #f5f4f0;
-    --main: #fe8a02;
-    --main_dark: #42413c;
-    --dark: #2a2626;
-    --translucent_dark: #908d8b;
-    --brown: #b09a81;
-    --blue: #1085c5;
+  --white: #fff;
+  --translucent_white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main_dark: #42413c;
+  --dark: #2a2626;
+  --translucent_dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
 }
 
-/**COMMON STYLES**/
+/** COMMON STYLES **/
 
 .container1 {
   display: flex;
@@ -96,7 +93,7 @@
   padding: 100px 0;
 }
 
-/**HEADER**/
+/** HEADER **/
 
 .header {
   position: relative;
@@ -105,7 +102,7 @@
   box-sizing: border-box;
 
   overflow: hidden;
-  background-color: var(--light)
+  background-color: var(--light);
 }
 
 .header-container {
@@ -127,26 +124,24 @@
   background-size: cover;
   opacity: 0.1;
   content: "";
-
 }
 
 .header-content {
   display: flex;
   height: 443px;
-
 }
 
 .orange-heading {
   color: var(--main);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   z-index: 2;
 }
 
 .black-heading {
   color: var(--dark);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-img {
@@ -154,15 +149,12 @@
   position: absolute;
   top: 55px;
   right: -270px;
-
   z-index: 1;
 }
 
 .header-text {
   display: flex;
   justify-content: space-between;
-
-  
 }
 
 .header-paragraph {
@@ -181,16 +173,14 @@
   color: var(--light);
   padding: 12px 24px;
   text-decoration: none;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 24px;
-  margin-right: 392px;
-  
-  
+  margin-right: 392px; 
 }
 
-/**SECTION_1**/
+/** SECTION-1 **/
 
 .section-first {
   position: relative;
@@ -198,20 +188,19 @@
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .section-first-heading {
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   color: var(--dark);
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-first-heading-orange {
   display: block;
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   color: var(--main);
 }
 
@@ -226,12 +215,9 @@
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   margin-bottom: -200px;
   z-index: 1;
-  
-
-  
 }
 
-/**SECTION_2**/
+/** SECTION_2 **/
 
 .section-second {
   position: relative;
@@ -259,14 +245,13 @@
 .section-second-heading {
   display: flex;
   flex-direction: column;
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   font-size: 52px;
   font-weight: normal;
   color: var(--main);
   line-height: 62.4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
+  margin-top: 0;
+  margin-bottom: 0;
   height: 323px;
   width: 350px;
 }
@@ -279,7 +264,6 @@
   box-sizing: border-box;
   background-color: var(--light);
   padding: 24px;
-
 }
 
 .card-1 {
@@ -287,7 +271,6 @@
   flex-direction: column;
   height: 323px;
   width: 350px;
-  
 }
 
 .card-2 {
@@ -299,7 +282,7 @@
 
 .number {
   font-size: 64px;
-  font-family: "Neucha";
+  font-family: Neucha,sans-serif;
   color: var(--main_dark);
   line-height: 1;
   padding-bottom: 40px;
@@ -307,10 +290,10 @@
 }
 
 .card-heading {
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   font-weight: normal;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--main);
 }
 
@@ -318,13 +301,12 @@
   margin-top: 12px;
 }
 
-
 .card-link {
   text-decoration: none;
   color: var(--dark);
 }
 
-.card:hover  {
+.card:hover {
   background-color: var(--main);
 }
 
@@ -336,7 +318,7 @@
   color: var(--white);
 }
   
-/**SECTIONS 3-5**/
+/** SECTIONS 3-5 **/
 
 .section-light {
   position: relative;
@@ -349,7 +331,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-
   background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,52 +343,48 @@
   height: 434px;
   width: 578px;
   padding-right: 30px;
-
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.section-main-text { /**для всех блоков**/
+.section-main-text { 
   display: flex;
   flex-direction: column;
   height: 434px;
   width: 502px;
 }
 
-.section-main-subtitle { /**для всех блоков**/
-  font-family: "Neucha";
+.section-main-subtitle { 
+  font-family: Neucha, sans-serif;
   font-size: 24px;
   color: var(--translucent_dark);
-  margin: 0px;
+  margin: 0;
 }
 
-.section-main-heading { /**для всех блоков**/
-  margin: 0px;
-  font-family: "Neucha";
+.section-main-heading { 
+  font-family: Neucha, sans-serif;
   color: var(--dark);
+  margin: 0;
 }
 
-.section-main-paragraph { /**для всех блоков**/
-  font-family: "Neucha";
+.section-main-paragraph {
+  font-family: Neucha, sans-serif;
   font-size: 34px;
   margin-top: 30px;
   line-height: 41px;
 }
 
-.heading-how-work { /**для всех блоков**/
+.heading-how-work { 
   box-sizing: border-box;
-
   padding-left: 10px;
   width: 1100px;
   height: 26px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: var(--white);
-
   background-color: var(--brown);
-
 }
 
-.text-how-work { /**для всех блоков**/
+.text-how-work { 
   display: flex;
   justify-content: space-between;
 }
@@ -441,11 +418,11 @@
   content: "";
 }
 
-.color-light { /**для всех светлых блоков**/
+.color-light { 
   color: var(--translucent_white);
 }
 
-.color-white { /**для всех светлых блоков**/
+.color-white { 
   color: var(--white);
 }
 
@@ -458,18 +435,15 @@
   height: 434px;
   width: 578px;
   padding-left: 30px;
-  
   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .background-white {
-
   color: var(--brown);
-
   background-color: var(--white);
 }
 
-/**FOOTER**/
+/** FOOTER **/
 
 .footer {
   display: flex;
@@ -477,26 +451,23 @@
   box-sizing: border-box;
   background-color: var(--main_dark);
   padding: 21px 55px;
-
 }
 
 .h3-footer {
   display: flex;
   align-items: center;
   margin: 0px;
-
   color: var(--white);
-
 }
 
 .email-heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: var(--white);
 }
 
 .text-accept-rules {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: var(--white);
 }
@@ -516,9 +487,7 @@ input {
   width: 70px;
   height: 50px;
   border: 0;
-
   background-color: var(--main);
-  
 }
 
 .btn::before {
@@ -530,7 +499,6 @@ input {
   background-image: url(/images/send.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
   content: "";
 }
 
